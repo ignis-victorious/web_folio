@@ -1,8 +1,9 @@
 //  _________________
 //  Import LIBRARIES
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 //  Import FILES
+import './extensions.dart';
+// import './app_text_styles.dart';
 //  PARTS
 //  PROVIDERS
 //  _________________
@@ -31,7 +32,8 @@ class AppLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('Il Checca');
+    return Text('Checca', style: context.textStyle.titleLgBold);
+    // return Text('Checca', style: LargeTextStyles().titleLgBold);
   }
 }
 
